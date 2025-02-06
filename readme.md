@@ -28,7 +28,7 @@ go run .
 - Por padrão, o servidor será executado em: http://127.0.0.1:8083
 - Na interface web que abrir, é possível cadastrar as câmeras RTSP em **"Add Stream"**.
 
-<img src="/rtsp-frontend/src/assets/rtsptoweb.jpg" width="600" alt="RTSPtoWEB">
+<img src="/rtsp-frontend/src/assets/rtsptoweb.jpg" alt="RTSPtoWEB">
 
 - As configurações de porta e stream podem ser feitos no arquivo `config.json`
 - Exemplo de configuração câmera RTSP no arquivo `config.json`
