@@ -9,7 +9,7 @@
 - Após a instalação, execute o comando `go version`
 - Se exibir a versão, o Go foi instalado corretamente.
 
-## RTSP Server
+# RTSP Server
 
 - Entre na pasta do servidor: `cd rtsp-server`
 - Execute: `go run .`
@@ -53,7 +53,7 @@ go run .
 }
 ```
 
-## RTSP Front-end
+# RTSP Front-end
 
 - Este exemplo está construído em React, mas pode ser qualquer framework/interface web.
 - Para acessar o arquivo m3u8 apropriado no Front o weclibre precisará formular a URL correta. O formato é:
@@ -68,7 +68,7 @@ http://localhost:8083/stream/{stream_name}/channel/{channel_name}/hls/live/index
 <VideoFeed src="http://localhost:8083/stream/cameras/channel/0/hls/live/index.m3u8" />
 ```
 
-## Como executar o site
+# Como executar o site
 
 - Instale as dependências: `npm install`
 - Inicialize o site: `npm run dev`
