@@ -12,10 +12,13 @@
 ## RTSP Server
 
 - Entre na pasta do servidor: `cd rtsp-server`
-- Execute: `GO111MODULE=on go run *.go`
-- Se o comando acima não funcionar, tente as opções abaixo de acordo com o terminal:
+- Execute: `go run .`
+- Outras opções de inicialização do servidor:
 
 ```bash
+# qualquer terminal
+GO111MODULE=on go run *.go
+
 # powershell
 $env:GO111MODULE="on"
 go run .
