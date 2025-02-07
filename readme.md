@@ -28,12 +28,12 @@ set GO111MODULE=on
 go run .
 ```
 
-- Por padrão, o servidor será executado em: http://127.0.0.1:8083
+- Por padrão, o servidor será executado no endereço: **http://127.0.0.1:8083**
 - Na interface web que abrir, é possível cadastrar as câmeras RTSP em **"Add Stream"**.
 
 <img src="/rtsp-frontend/src/assets/rtsptoweb.jpg" alt="RTSPtoWEB">
 
-- As configurações de **porta** e **stream** podem ser feitos no arquivo `config.json`. Exemplo:
+- As configurações de **porta** e **streams** podem ser feitos no arquivo `config.json`. Exemplo:
 
 ```json
 {
@@ -60,6 +60,12 @@ go run .
 
 ```txt
 http://localhost:8083/stream/{stream_name}/channel/{channel_name}/hls/live/index.m3u8
+```
+
+- Exemplo de funcionamento do componente para exibir as câmeras:
+
+```tsx
+<VideoFeed src="http://localhost:8083/stream/cameras/channel/0/hls/live/index.m3u8" />
 ```
 
 ## Como executar o site
