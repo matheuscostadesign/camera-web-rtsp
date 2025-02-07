@@ -33,7 +33,7 @@ export default function App() {
           <p>Por Matheus Costa</p>
         </div>
       </a>
-      <VideoFeed src="http://localhost:8083/stream/cameras/channel/0/hls/live/index.m3u8" />
+      <VideoFeed src="http://proansi.ddns.net:8083/stream/cameras/channel/0/hls/live/index.m3u8" />
     </div>
   );
 }
