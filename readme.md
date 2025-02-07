@@ -30,22 +30,41 @@ go run .
 
 <img src="/rtsp-frontend/src/assets/rtsptoweb.jpg" alt="RTSPtoWEB">
 
-- As configurações de porta e stream podem ser feitos no arquivo `config.json`
-- Exemplo de configuração câmera RTSP no arquivo `config.json`
+- As configurações de **porta** e **stream** podem ser feitos no arquivo `config.json`. Exemplo:
 
 ```json
+{
+  "http_port": ":8083",
   "streams": {
-    "camera-recepcao": {
+    "cameras": {
       "channels": {
         "0": {
-          "url": "rtsp://admin:admin@192.168.10.211:554"
+          "url": "rtsp://admin:admin@192.168.10.211:554",
+          "debug": false,
+          "audio": false
         }
       },
-      "name": "Teste Câmera"
+      "name": "Câmera Entrada Proansi"
     }
   }
+}
 ```
 
 ## RTSP Front-end
 
 - Este exemplo está construído em React, mas pode ser qualquer framework/interface web.
+- Para acessar o arquivo m3u8 apropriado no Front o weclibre precisará formular a URL correta. O formato é:
+
+```txt
+http://localhost:8083/stream/{stream_name}/channel/{channel_name}/hls/live/index.m3u8
+```
+
+## Como executar o site
+
+- Instale as dependências: `npm install`
+- Inicialize o site: `npm run dev`
+
+# Referências
+
+- https://github.com/deepch/RTSPtoWeb
+- https://medium.com/cisco-fpie/how-to-render-rtsp-streams-within-a-react-app-e7957e591075
