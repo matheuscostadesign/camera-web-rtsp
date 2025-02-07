@@ -70,6 +70,7 @@ http://localhost:8083/stream/{stream_name}/channel/{channel_name}/hls/live/index
 
 # Como executar o site
 
+- Entre na pasta do site: `cd rtsp-frontend`
 - Instale as dependências: `npm install`
 - Inicialize o site: `npm run dev`
 
