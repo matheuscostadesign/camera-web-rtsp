@@ -64,6 +64,8 @@ http://localhost:8083/stream/{stream_name}/channel/{channel_name}/hls/live/index
 - Instale as dependências: `npm install`
 - Inicialize o site: `npm run dev`
 
+<img src="/rtsp-frontend/src/assets/rtsptoweb2.jpg" alt="RTSPtoWEB React">
+
 # Referências
 
 - https://github.com/deepch/RTSPtoWeb
