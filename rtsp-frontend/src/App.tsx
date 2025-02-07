@@ -12,7 +12,7 @@ export default function App() {
       }}
     >
       <h1>Câmera RTSP React</h1>
-      <a
+      {/* <a
         href="https://github.com/matheuscostadesign/camera-web-rtsp"
         target="_blank"
       >
@@ -32,7 +32,7 @@ export default function App() {
           />
           <p>Por Matheus Costa</p>
         </div>
-      </a>
+      </a> */}
       <VideoFeed src="http://proansi.ddns.net:8083/stream/cameras/channel/0/hls/live/index.m3u8" />
     </div>
   );
